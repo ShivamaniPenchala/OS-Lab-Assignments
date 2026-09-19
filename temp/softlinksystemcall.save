@@ -1,0 +1,7 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+	if(link("file1.txt", "hlfile1.txt") == -1){
+		perror("hardlink");
+		
+	

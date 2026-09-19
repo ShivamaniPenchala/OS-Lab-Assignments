@@ -1,0 +1,22 @@
+total 0
+lrwx------ 1 shivamani-penchala shivamani-penchala 64 Sep  2 12:30 0 -> /dev/pts/0
+lrwx------ 1 shivamani-penchala shivamani-penchala 64 Sep  2 12:30 1 -> /dev/pts/0
+l-wx------ 1 shivamani-penchala shivamani-penchala 64 Sep  2 12:30 10 -> /home/shivamani-penchala/Desktop/SS_Assignment/file_8
+l-wx------ 1 shivamani-penchala shivamani-penchala 64 Sep  2 12:30 11 -> /home/shivamani-penchala/Desktop/SS_Assignment/file_9
+l-wx------ 1 shivamani-penchala shivamani-penchala 64 Sep  2 12:30 12 -> /home/shivamani-penchala/Desktop/SS_Assignment/file_10
+l-wx------ 1 shivamani-penchala shivamani-penchala 64 Sep  2 12:30 13 -> /home/shivamani-penchala/Desktop/SS_Assignment/file_11
+l-wx------ 1 shivamani-penchala shivamani-penchala 64 Sep  2 12:30 14 -> /home/shivamani-penchala/Desktop/SS_Assignment/file_12
+l-wx------ 1 shivamani-penchala shivamani-penchala 64 Sep  2 12:30 15 -> /home/shivamani-penchala/Desktop/SS_Assignment/file_13
+l-wx------ 1 shivamani-penchala shivamani-penchala 64 Sep  2 12:30 16 -> /home/shivamani-penchala/Desktop/SS_Assignment/file_14
+l-wx------ 1 shivamani-penchala shivamani-penchala 64 Sep  2 12:30 17 -> /home/shivamani-penchala/Desktop/SS_Assignment/file_15
+l-wx------ 1 shivamani-penchala shivamani-penchala 64 Sep  2 12:30 18 -> /home/shivamani-penchala/Desktop/SS_Assignment/file_16
+l-wx------ 1 shivamani-penchala shivamani-penchala 64 Sep  2 12:30 19 -> /home/shivamani-penchala/Desktop/SS_Assignment/file_17
+lrwx------ 1 shivamani-penchala shivamani-penchala 64 Sep  2 12:30 2 -> /dev/pts/0
+l-wx------ 1 shivamani-penchala shivamani-penchala 64 Sep  2 12:30 20 -> /home/shivamani-penchala/Desktop/SS_Assignment/file_18
+l-wx------ 1 shivamani-penchala shivamani-penchala 64 Sep  2 12:30 3 -> /home/shivamani-penchala/Desktop/SS_Assignment/file_1
+l-wx------ 1 shivamani-penchala shivamani-penchala 64 Sep  2 12:30 4 -> /home/shivamani-penchala/Desktop/SS_Assignment/file_2
+l-wx------ 1 shivamani-penchala shivamani-penchala 64 Sep  2 12:30 5 -> /home/shivamani-penchala/Desktop/SS_Assignment/file_3
+l-wx------ 1 shivamani-penchala shivamani-penchala 64 Sep  2 12:30 6 -> /home/shivamani-penchala/Desktop/SS_Assignment/file_4
+l-wx------ 1 shivamani-penchala shivamani-penchala 64 Sep  2 12:30 7 -> /home/shivamani-penchala/Desktop/SS_Assignment/file_5
+l-wx------ 1 shivamani-penchala shivamani-penchala 64 Sep  2 12:30 8 -> /home/shivamani-penchala/Desktop/SS_Assignment/file_6
+l-wx------ 1 shivamani-penchala shivamani-penchala 64 Sep  2 12:30 9 -> /home/shivamani-penchala/Desktop/SS_Assignment/file_7
