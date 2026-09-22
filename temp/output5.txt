@@ -1,9 +1,0 @@
-total 0
-lrwx------ 1 shivamani-penchala shivamani-penchala 64 Sep  1 22:29 0 -> /dev/pts/0
-lrwx------ 1 shivamani-penchala shivamani-penchala 64 Sep  1 22:29 1 -> /dev/pts/0
-lrwx------ 1 shivamani-penchala shivamani-penchala 64 Sep  1 22:29 2 -> /dev/pts/0
-lr-x------ 1 shivamani-penchala shivamani-penchala 64 Sep  1 22:29 3 -> /home/shivamani-penchala/Desktop/SS_Assignment/file_1
-lr-x------ 1 shivamani-penchala shivamani-penchala 64 Sep  1 22:29 4 -> /home/shivamani-penchala/Desktop/SS_Assignment/file_2
-lr-x------ 1 shivamani-penchala shivamani-penchala 64 Sep  1 22:29 5 -> /home/shivamani-penchala/Desktop/SS_Assignment/file_3
-lr-x------ 1 shivamani-penchala shivamani-penchala 64 Sep  1 22:29 6 -> /home/shivamani-penchala/Desktop/SS_Assignment/file_4
-lr-x------ 1 shivamani-penchala shivamani-penchala 64 Sep  1 22:29 7 -> /home/shivamani-penchala/Desktop/SS_Assignment/file_5

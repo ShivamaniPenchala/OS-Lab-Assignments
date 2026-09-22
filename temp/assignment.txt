@@ -1,9 +1,0 @@
-1. Hard_link
-touch file1
-ln file hard_link_file
-soft_Link
-touch file1
-ln -s file soft_link_file
-Fifo Pipe
-mkfifo pipe
-

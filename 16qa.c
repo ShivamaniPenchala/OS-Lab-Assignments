@@ -30,7 +30,7 @@ int main()
 
     write(1, "Write Lock acquired\n", 20);
 
-	lseek(fd, 5, SEEK_SET);
+    lseek(fd, 5, SEEK_SET);
 
     write(fd, "abcdefghij\n", 10);
 

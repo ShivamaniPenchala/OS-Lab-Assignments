@@ -4,7 +4,8 @@
 int main()
 {
     int fd = open("ticket.txt", O_WRONLY | O_CREAT | O_TRUNC, 0666);
-    if (fd == -1){
+    if (fd == -1)
+    {
         write(2, "Open error\n", 11);
         return -1;
     }

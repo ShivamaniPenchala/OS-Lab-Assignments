@@ -5,7 +5,7 @@ int main()
 {
     fd_set readfds;
     struct timeval timeout;
-    
+
     char buffer[100];
 
     FD_ZERO(&readfds);
@@ -40,6 +40,7 @@ int main()
             {
                 write(1, "Input: ", 7);
                 write(1, buffer, n);
+                write(1, "\n", 1);
             }
         }
     }

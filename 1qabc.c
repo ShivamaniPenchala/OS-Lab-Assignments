@@ -1,46 +1,39 @@
 #include <unistd.h>
-#include <stdio.h>
 #include <fcntl.h>
 #include <sys/stat.h>
-#include <sys/types.h>
-int main(){
+
+int main()
+{
 	int fd = creat("1qabc.txt", 0777);
-	if(fd == -1){
-		perror("create error");
+	if (fd == -1)
+	{
+		write(2, "create error\n", 13);
 		return -1;
-
-	}
-	else{
-		char buff[50] = "file Created Successfully\n";
-		write(1, buff, sizeof(buff));
-	}
-	if(symlink("1qabc.txt", "1qabc_soft_link.txt") == -1){
-		perror("symlink error");
-		return -1;
-	}
-	else{
-		char buff[50] = "soft link created successfully\n";
-		write(1, buff, sizeof(buff));
-	}
-	if(link("1qabc.txt", "1qabc_Hard_link.txt") == -1){
-		perror("Hard Link Error");
-		return -1;
-	}
-	else{
-		char buff[50] = "Hard link created successfully\n";
-		write(1, buff, sizeof(buff));
 	}
 
-	if(mknod("1qabcpipe.txt", S_IFIFO | 0777, 0) == -1){
-		perror("mknod error");
+	if (symlink("1qabc.txt", "1qabc_soft_link.txt") == -1)
+	{
+		write(2, "symlink error\n", 14);
+		close(fd);
 		return -1;
 	}
-	else{
-		char buff[50] = "Pipe  created successfully\n";
-		write(1, buff, sizeof(buff));
+	write(1, "soft link created successfully\n", 32);
+
+	if (link("1qabc.txt", "1qabc_Hard_link.txt") == -1)
+	{
+		write(2, "Hard link error\n", 16);
+		close(fd);
+		return -1;
 	}
+	write(1, "Hard link created successfully\n", 32);
+
+	if (mknod("1qabcpipe.txt", S_IFIFO | 0777, 0) == -1)
+	{
+		write(2, "mknod error\n", 12);
+		close(fd);
+		return -1;
+	}
+	write(1, "Pipe  created successfully\n", 27);
+
 	return 0;
 }
-
-
-	

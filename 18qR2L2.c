@@ -1,9 +1,11 @@
 #include <unistd.h>
 #include <fcntl.h>
 
-int main(){
+int main()
+{
     int fd = open("records.txt", O_RDWR);
-    if(fd == -1){
+    if (fd == -1)
+    {
         write(2, "open error\n", 11);
         return -1;
     }
@@ -14,7 +16,8 @@ int main(){
     lock.l_start = 12;
     lock.l_len = 10;
 
-    if(fcntl(fd, F_SETLKW, &lock) == -1){
+    if (fcntl(fd, F_SETLKW, &lock) == -1)
+    {
         write(2, "lock error\n", 11);
         close(fd);
         return -1;
@@ -31,17 +34,16 @@ int main(){
 
     lock.l_type = F_UNLCK;
 
-    if(fcntl(fd, F_SETLK, &lock) == -1)
+    if (fcntl(fd, F_SETLK, &lock) == -1)
     {
         write(2, "Unlock error\n", 13);
         close(fd);
         return -1;
     }
-    
+
     write(1, "Record 2 unlocked\n", 18);
 
     close(fd);
 
     return 0;
-    
 }
