@@ -19,6 +19,7 @@ int main(int argc, char *argv[])
 	{
 		write(1, "regular file\n", 12);
 	}
+	
 	else if (S_ISDIR(st.st_mode))
 	{
 		write(1, "Directory\n", 10);

@@ -4,19 +4,13 @@
 
 int main()
 {
-    pid_t pid;
-    pid = fork();
-
-    if (pid == 0)
-    {   
-        int childpid = getpid();
-        printf("Child exiting with pid : %d\n", childpid);
+    pid_t pid = fork();
+    if (pid == 0){   
+        printf("Child exiting with pid : %d\n", getpid());
         _exit(0);
     }
-    else
-    {
-        int parentpid = getpid();
-        printf("parent sleeping with pid : %d\n", parentpid);
+    else if(pid > 0){
+        printf("parent sleeping with pid : %d\n", getpid());
         sleep(120);
     }
     return 0;

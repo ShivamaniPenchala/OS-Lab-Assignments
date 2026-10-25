@@ -20,7 +20,7 @@ int main()
     lock.l_type = F_WRLCK;
     lock.l_whence = SEEK_SET;
     lock.l_start = 0;
-    lock.l_len = 10;
+    lock.l_len = 0;
 
     if (fcntl(fd, F_SETLK, &lock) == -1)
     {

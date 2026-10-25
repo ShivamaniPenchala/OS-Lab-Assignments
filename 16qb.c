@@ -3,31 +3,15 @@
 
 int main()
 {
-    int fd;
     struct flock lock;
-
-    fd = open("lockfile.txt", O_RDONLY);
-
-    if (fd == -1)
-    {
-        write(2, "fd error\n", 9);
-        return -1;
-    }
-
+    int fd = open("lockfile.txt", O_RDONLY);
     lock.l_type = F_RDLCK;
     lock.l_whence = SEEK_SET;
     lock.l_start = 0;
-    lock.l_len = 10;
+    lock.l_len = 0;
 
     write(1, "Trying to get lock...\n", 22);
-
-    if (fcntl(fd, F_SETLKW, &lock) == -1)
-    {
-        write(1, "lock error\n", 11);
-        close(fd);
-        return -1;
-    }
-
+    fcntl(fd, F_SETLKW, &lock);
     write(1, "READ Lock acquired\n", 19);
 
     char *buff[100];

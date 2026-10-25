@@ -3,60 +3,13 @@
 
 int main()
 {
-
 	int fd1 = open("testfile.txt", O_RDONLY);
-	if (fd1 == -1)
-	{
-		write(2, "fd1 error", 9);
-		return -1;
-	}
-
 	int fd2 = open("txtfile.txt", O_WRONLY);
-	if (fd2 == -1)
-	{
-		write(2, "fd2 error", 9);
-		close(fd1);
-		return -1;
-	}
-
 	int fd3 = open("test.txt", O_RDWR);
-	if (fd3 == -1)
-	{
-		write(2, "fd3 error", 9);
-		close(fd1);
-		close(fd2);
-		return -1;
-	}
 
 	int f1flag = fcntl(fd1, F_GETFL);
-	if (f1flag == -1)
-	{
-		write(2, "f1flag error", 12);
-		close(fd1);
-		close(fd2);
-		close(fd3);
-		return -1;
-	}
-	
 	int f2flag = fcntl(fd2, F_GETFL);
-	if (f2flag == -1)
-	{
-		write(2, "f2flag error", 12);
-		close(fd1);
-		close(fd2);
-		close(fd3);
-		return -1;
-	}
-	
 	int f3flag = fcntl(fd3, F_GETFL);
-	if (f3flag == -1)
-	{
-		write(2, "f3flag error", 12);
-		close(fd1);
-		close(fd2);
-		close(fd3);
-		return -1;
-	}
 
 	int mode[3];
 	mode[0] = f1flag & O_ACCMODE;
